@@ -2,7 +2,7 @@
 
 // =================================================================================
 // Module: top
-// Description: SwitzySpeedy 게임의 최상위 모듈 (최종 통합 재수정 버전)
+// Description: SwitzySpeedy 게임의 최상위 모듈
 // =================================================================================
 module top(
     input wire clk,
@@ -35,7 +35,7 @@ module top(
     reg [2:0]  current_round;
     reg [7:0]  r1_pattern, r2_initial_leds;
     reg [13:0] r3_pattern;
-    // reg [1:0]  r3_correct_answer; // [수정 1] 타이밍 문제 해결을 위해 reg 대신 wire로 변경
+    
     reg is_correct;
     reg [19:0] fnd_data_reg;
     reg [15:0] led_reg;
@@ -78,7 +78,6 @@ module top(
     
     assign led = led_reg;
 
-    // [수정 1] 3라운드 정답을 조합논리(wire)로 즉시 계산하여 타이밍 문제를 원천적으로 제거합니다.
     wire [1:0] r3_correct_answer = (r3_left_count > r3_right_count) ? R3_ANS_LEFT :
                                    (r3_left_count < r3_right_count) ? R3_ANS_RIGHT : R3_ANS_EQUAL;
 
@@ -198,6 +197,7 @@ module top(
                 case(state)
                     S_IDLE: begin
                         idle_anim_counter <= idle_anim_counter + 1;
+                        // 대기 상태 애니메이션
                         case (idle_anim_counter[26:23])
                             4'd0: fnd_data_reg <= {C_ANIM_A, C_BLANK, C_BLANK, C_BLANK}; 4'd1: fnd_data_reg <= {C_BLANK, C_ANIM_A, C_BLANK, C_BLANK};
                             4'd2: fnd_data_reg <= {C_BLANK, C_BLANK, C_ANIM_A, C_BLANK}; 4'd3: fnd_data_reg <= {C_BLANK, C_BLANK, C_BLANK, C_ANIM_A};

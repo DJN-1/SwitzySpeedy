@@ -31,7 +31,7 @@ module segment_decoder(
 
     always @(*) begin
         case (data_in)
-            // [수정] 숫자 표현을 5비트로 통일
+            // 숫자 표현을 5비트로 통일
             5'd0: seg_out = 7'b1000000; // 0
             5'd1: seg_out = 7'b1111001; // 1
             5'd2: seg_out = 7'b0100100; // 2
@@ -51,7 +51,7 @@ module segment_decoder(
             C_L:     seg_out = 7'b1000111;
             C_E:     seg_out = 7'b0000110;
             C_d:     seg_out = 7'b0100001;
-            // [수정] 누락된 애니메이션 코드 패턴 모두 추가
+            // 누락된 애니메이션 코드 패턴 모두 추가
             // Active-Low 이므로 해당 비트만 0으로 만들어 켭니다. (g,f,e,d,c,b,a)
             C_ANIM_A: seg_out = 7'b1111110; // a
             C_ANIM_B: seg_out = 7'b1111101; // b
