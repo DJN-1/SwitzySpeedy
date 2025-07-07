@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SwitzySpeedy_g.srcs/sources_1/new/button_debouncer.v" \
+"../../../../SwitzySpeedy_g.srcs/sources_1/new/clock_divider.v" \
+"../../../../SwitzySpeedy_g.srcs/sources_1/new/fnd_controller.v" \
+"../../../../SwitzySpeedy_g.srcs/sources_1/new/lfsr.v" \
+"../../../../SwitzySpeedy_g.srcs/sources_1/new/popcount.v" \
+"../../../../SwitzySpeedy_g.srcs/sources_1/new/segment_decoder.v" \
+"../../../../SwitzySpeedy_g.srcs/sources_1/new/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

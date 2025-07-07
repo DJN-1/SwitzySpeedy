@@ -1,0 +1,12 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/button_debouncer.v,1751560331,verilog,,D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/clock_divider.v,,button_debouncer,,,,,,,,
+D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/clock_divider.v,1751560263,verilog,,D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/fnd_controller.v,,clock_divider,,,,,,,,
+D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/fnd_controller.v,1751566155,verilog,,D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/lfsr.v,,fnd_controller,,,,,,,,
+D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/lfsr.v,1751560642,verilog,,D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/popcount.v,,lfsr,,,,,,,,
+D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/popcount.v,1751560677,verilog,,D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/segment_decoder.v,,popcount,,,,,,,,
+D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/segment_decoder.v,1751571846,verilog,,D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/top.v,,segment_decoder,,,,,,,,
+D:/project/FPGA/src/SwitzySpeedy_g/SwitzySpeedy_g.srcs/sources_1/new/top.v,1751864722,verilog,,,,top,,,,,,,,

@@ -27,7 +27,7 @@ module segment_decoder(
                
     // 애니메이션용 코드
     localparam C_ANIM_A = 5'd17, C_ANIM_B = 5'd18, C_ANIM_C = 5'd19,
-               C_ANIM_D = 5'd20, C_ANIM_E = 5'd21, C_ANIM_F = 5'd22, C_d = 5'd23;
+               C_ANIM_D = 5'd20, C_ANIM_E = 5'd21, C_ANIM_F = 5'd22, C_d = 5'd25;
 
     always @(*) begin
         case (data_in)
@@ -47,7 +47,7 @@ module segment_decoder(
             C_O:     seg_out = 7'b0100011;
             C_X:     seg_out = 7'b0001001;
             C_DASH:  seg_out = 7'b0111111;
-            C_G:     seg_out = 7'b1001110;
+            C_G:     seg_out = 7'b0010000;
             C_L:     seg_out = 7'b1000111;
             C_E:     seg_out = 7'b0000110;
             C_d:     seg_out = 7'b0100001;
